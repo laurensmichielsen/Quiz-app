@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="222.0" prefWidth="482.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.ImportActivityCtrl">
+   <children>
+      <Text layoutX="179.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Import Activity" wrappingWidth="123.24365234375">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="171.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Path to activities.json">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="pathField" layoutX="10.0" layoutY="80.0" prefHeight="31.0" prefWidth="462.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelButton" layoutX="107.0" layoutY="171.0" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" layoutX="310.0" layoutY="171.0" mnemonicParsing="false" onAction="#submitPressed" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorMessage" layoutX="24.0" layoutY="123.0" prefHeight="31.0" prefWidth="434.0" textAlignment="CENTER" />
+      <ProgressIndicator fx:id="progressIndicator" layoutX="384.0" layoutY="171.0" prefHeight="43.0" prefWidth="46.0" progress="0.0" />
+   </children>
+</AnchorPane>

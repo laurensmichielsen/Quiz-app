@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.EditActivityCtrl">
+   <children>
+      <Text layoutX="265.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Activity">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Button layoutX="509.0" layoutY="241.0" mnemonicParsing="false" onAction="#updatePressed" text="Update">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="354.0" layoutY="241.0" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="190.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Title:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="87.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consumption in Wh:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="titleField" layoutX="229.0" layoutY="74.0" prefHeight="26.0" prefWidth="350.0" />
+      <TextField fx:id="whField" layoutX="229.0" layoutY="121.0" prefHeight="26.0" prefWidth="349.0" promptText="Enter only integer input" />
+      <Label fx:id="errorMessage" layoutX="229.0" layoutY="200.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="438.0" layoutY="241.0" mnemonicParsing="false" onAction="#resetPressed" text="Reset">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="imagePathField" layoutX="229.0" layoutY="161.0" prefHeight="26.0" prefWidth="349.0" promptText="C:\example.png (leave empty to keep old image)" />
+      <Text layoutX="87.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image absolute path:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
